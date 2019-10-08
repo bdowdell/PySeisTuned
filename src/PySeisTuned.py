@@ -1,4 +1,4 @@
-#!/home/bendowdell/anaconda3/envs/PySeisTuned/bin/python
+#!/usr/bin/env python
 
 # This is a simple GUI utility to calculate a seismic tuning wedge
 # The base code for this comes from Agile Scientific's Synthetic Tuning Wedge nb
