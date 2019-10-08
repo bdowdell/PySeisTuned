@@ -191,7 +191,7 @@ Theoretical limit of resolution (F_apparent / 8, Widess, 1973): {} sec TWT, {} m
 Theoretical limit of resolution (1/2.31*Fdom, Simm & Bacon, 2014): {} sec TWT, {}m
 	""".format(round(AI1,2), round(AI2,2), round(AI3,2), round(rc1,4),
 		round(rc2,4), f_central,
-		round(f_apparent,2), f_dom_simm, 
+		round(f_apparent,2), f_dom_simm,
 		round(z_tuning_meas_TWT,4), round(z_tuning_meas_m,1),
 		round(z_tuning_widess_TWT,4), round(z_tuning_widess_m,1),
 		round(z_tuning_simm_TWT,4), round(z_tuning_simm_m,1),
