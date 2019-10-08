@@ -83,7 +83,7 @@ def tuningcurve(rc, synth, rock_props):
 	AI = np.apply_along_axis(np.product, -1, rocks)
 
 	# Determine the wedge thickness at each trace
-	# Initially we assume that the top RC is a decrease in impedance, 
+	# Initially we assume that the top RC is a decrease in impedance,
 	#negative value (trough) SEG normal polarity
 	if AI[1] < AI[0]:
 		top = np.apply_along_axis(np.nanargmin, 0, rc) + 1
