@@ -196,7 +196,7 @@ Theoretical limit of resolution (1/2.31*Fdom, Simm & Bacon, 2014): {} sec TWT, {
 		round(z_tuning_widess_TWT,4), round(z_tuning_widess_m,1),
 		round(z_tuning_simm_TWT,4), round(z_tuning_simm_m,1),
 		round(z_onset_meas_TWT,4), round(z_onset_meas_m,1),
-		round(z_onset_widess_TWT,4), round(z_onset_widess_m,1), 
+		round(z_onset_widess_TWT,4), round(z_onset_widess_m,1),
 		round(z_onset_simm_TWT,4), round(z_onset_simm_m,1), 
 		round(wlength_widess,2), round(wlength_simm,2), 
 		round(z_limit_widess_TWT,4), round(z_limit_widess_m,1), 
