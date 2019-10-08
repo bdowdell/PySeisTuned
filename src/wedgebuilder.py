@@ -5,7 +5,6 @@
 # source: https://github.com/agile-geoscience/xlines/blob/master/notebooks/00_Synthetic_wedge_model.ipynb
 
 import numpy as np
-import matplotlib.pyplot as plt
 
 def earthmodel(rock_props):
 	"""
