@@ -43,7 +43,7 @@ def earthmodel(rock_props):
 
 def wavelet(duration=0.100, dt=0.001, f=25):
 	"""
-	This function defines a Ricker wavelet to convolve with the earth model 
+	This function defines a Ricker wavelet to convolve with the earth model
 	reflection coefficients to build the tuning wedge.
 	returns w
 	"""
