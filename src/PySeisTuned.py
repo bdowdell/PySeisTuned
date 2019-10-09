@@ -76,7 +76,8 @@ class PySeisTuned(QMainWindow):
 		# add a button for help on the program
 		progHelp = QAction('Program', self)
 		progHelp.setStatusTip('Program help')
-		helpMenu.addAction(progHelp)"""
+		helpMenu.addAction(progHelp)
+		"""
 
 		"""# add a button for help on theory & references
 		theoryHelp = QAction('Theory and References', self)
