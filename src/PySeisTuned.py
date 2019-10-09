@@ -138,7 +138,7 @@ class tabbedWindow(QWidget):
 
 		# Create the first tab
 
-		# initialize buttons for reseting the input boxes and submitting the 
+		# initialize buttons for reseting the input boxes and submitting the
 		# input values for calculating the tuning wedge
 		self.resetButton = QPushButton('Reset',self)
 		self.calculateButton = QPushButton('Calculate',self)
