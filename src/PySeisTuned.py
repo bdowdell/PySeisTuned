@@ -171,7 +171,7 @@ class tabbedWindow(QWidget):
 		self._update_ricker_ax = self.rickerBox.figure.subplots()
 		modelBoxLabel = QLabel('<b>Tuning Wedge</b>')
 		self.modelBox = PlotCanvas(self, width=5, height=4)
-		(self._update_earthmodel_ax, self._update_wedge_ax) = self.modelBox.figure.subplots(2, 
+		(self._update_earthmodel_ax, self._update_wedge_ax) = self.modelBox.figure.subplots(2,
 			sharex=True, sharey=True)
 		self.modelBox.figure.subplots_adjust(hspace=0)
 		ampPlotBoxLabel = QLabel('<b>Tuning Curve</b>')
