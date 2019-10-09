@@ -474,7 +474,7 @@ class tabbedWindow(QWidget):
 		self._update_amp_ax.set_xlabel('Thickness, TWT (ms)')
 		self._update_amp_ax.set_ylabel('Amplitude')
 		self._update_amp_ax2.plot(self.z, self.z, 'g', label='True thickness ms TWT')
-		self._update_amp_ax2.plot(self.z, self.z_apparent, 'r', 
+		self._update_amp_ax2.plot(self.z, self.z_apparent, 'r',
 			label='Apparent thickness ms TWT')
 		lines, labels = self._update_amp_ax.get_legend_handles_labels()
 		lines2, labels2 = self._update_amp_ax2.get_legend_handles_labels()
