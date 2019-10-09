@@ -8,7 +8,7 @@
 import sys
 import os
 from PyQt5.QtWidgets import (QMainWindow, QApplication, QLabel, QWidget, QPushButton,
-	QAction, QTabWidget, QVBoxLayout, QGridLayout, QLineEdit, QTextEdit, QTextBrowser,
+	QAction, QTabWidget, QVBoxLayout, QGridLayout, QLineEdit, QTextBrowser,
 	QSpacerItem, QSizePolicy, QMessageBox, QDialog, QFileDialog)
 from PyQt5.QtGui import QIcon, QValidator, QDoubleValidator
 from PyQt5.QtCore import pyqtSlot
