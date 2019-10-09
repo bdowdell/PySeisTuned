@@ -178,7 +178,7 @@ class tabbedWindow(QWidget):
 		self.ampPlotBox = PlotCanvas(self, width=5, height=1)
 		self._update_amp_ax = self.ampPlotBox.figure.subplots()
 		self._update_amp_ax2 = self._update_amp_ax.twinx()
-		
+
 		#initialize spacers to help with layout
 		vspacerSG1 = QSpacerItem(QSizePolicy.Minimum, QSizePolicy.Expanding)
 		vspacerSG2 = QSpacerItem(QSizePolicy.Minimum, QSizePolicy.Expanding)
