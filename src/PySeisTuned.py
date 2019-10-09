@@ -469,7 +469,7 @@ class tabbedWindow(QWidget):
 		ampMin, ampMax = wb.tuningVLine(self.amp)
 		self._update_amp_ax.vlines(self.z_tuning, ampMin, ampMax,
 			label='Measured Tuning Thickness {}ms TWT'.format(self.z_tuning))
-		self._update_amp_ax.vlines(self.z_onset, ampMin, ampMax, linestyles='dashed', 
+		self._update_amp_ax.vlines(self.z_onset, ampMin, ampMax, linestyles='dashed',
 			label='Measured Onset of Tuning {}ms TWT'.format(self.z_onset))
 		self._update_amp_ax.set_xlabel('Thickness, TWT (ms)')
 		self._update_amp_ax.set_ylabel('Amplitude')
