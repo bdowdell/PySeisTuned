@@ -276,7 +276,7 @@ class tabbedWindow(QWidget):
 		self.sampbox.textChanged.connect(self.check_state)
 		self.sampbox.textChanged.emit(self.sampbox.text())
 
-		# Define a function to reset all input fields to default state upon clicking 
+		# Define a function to reset all input fields to default state upon clicking
 		# "Reset" button
 		def clearAll():
 			self.reset_defaultValues()
