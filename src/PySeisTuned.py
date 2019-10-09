@@ -14,7 +14,6 @@ from PyQt5.QtGui import QIcon, QValidator, QDoubleValidator
 from PyQt5.QtCore import pyqtSlot
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
-import matplotlib.pyplot as plt
 import wedgebuilder as wb
 
 class PySeisTuned(QMainWindow):
