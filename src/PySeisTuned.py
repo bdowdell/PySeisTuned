@@ -71,7 +71,7 @@ class PySeisTuned(QMainWindow):
 		aboutMenu.addAction(aboutButton)
 
 		"""# add a Help menu to the main men
-		helpMenu = mainMenu.addMenu('Help')	
+		helpMenu = mainMenu.addMenu('Help')
 
 		# add a button for help on the program
 		progHelp = QAction('Program', self)
