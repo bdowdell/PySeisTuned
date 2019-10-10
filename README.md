@@ -24,7 +24,13 @@ $ conda create -n <env> -f requirements.txt
 You can activate the new environment by entering the following at the terminal:
 
 ```bash
-$ conda activate pst <or whatever name you gave it if you used requirements.txt method>
+$ conda activate pst
+```
+
+If you used the environment.yml, the new environment will be called pst.  If you used the requirements.txt, it will be the name you entered at the command line.  You can always check your conda environments as follows:
+
+```bash
+$ conda env list
 ```
 
 ## 2) Launch the GUI from the terminal
