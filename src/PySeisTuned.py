@@ -123,7 +123,6 @@ class PySeisTuned(QMainWindow):
 class tabbedWindow(QWidget):
 
 	def __init__(self, parent):
-		#super(QWidget, self).__init__(parent)
 		super().__init__(parent)
 		self.layout = QGridLayout(self)
 
