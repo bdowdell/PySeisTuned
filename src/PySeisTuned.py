@@ -244,6 +244,7 @@ class tabbedWindow(QWidget):
 		self.setLayout(self.layout)
 
 		# initialize default values for all input boxes across both tabs
+		self.calculateState = 0
 		self.set_defaultValues()
 
 		# initialize validators for QLineEdit input boxes
@@ -277,7 +278,7 @@ class tabbedWindow(QWidget):
 		self.sampbox.textChanged.emit(self.sampbox.text())
 
 		# Link self.resetButton to a function which clears all input widgets
-		self.resetButton.clicked.connect(self.reset_defaultValues)
+		self.resetButton.clicked.connect(self.set_defaultValues)
 
 		# function to get values and pass to functions
 		def calculateValues():
@@ -367,42 +368,24 @@ class tabbedWindow(QWidget):
 		self.resultsBox.setText("don't panic!")
 		self.calculateButton.setEnabled(False)
 		self.exportButton.setEnabled(False)
-		#clear out the FigureCanvases
-		self._update_ricker_ax.clear()
-		self._update_ricker_ax.tick_params(labelleft=False, labelbottom=False)
-		self._update_ricker_ax.figure.canvas.draw()
-		self._update_earthmodel_ax.clear()
-		self._update_earthmodel_ax.tick_params(labelleft=False)
-		self._update_wedge_ax.clear()
-		self._update_wedge_ax.tick_params(labelleft=False, labelbottom=False)
-		self._update_earthmodel_ax.figure.canvas.draw()
-		self._update_wedge_ax.figure.canvas.draw()
-		self._update_amp_ax.clear()
-		self._update_amp_ax.tick_params(labelleft=False, labelbottom=False)
-		self._update_amp_ax2.clear()
-		self._update_amp_ax2.tick_params(labelright=False, labelbottom=False)
-		self._update_amp_ax.figure.canvas.draw()
-		self._update_amp_ax2.figure.canvas.draw()
-
-	# function to set all inputs to default state
-	def reset_defaultValues(self):
-		self.layer1vp.clear()
-		self.layer1rhob.clear()
-		self.layer2vp.clear()
-		self.layer2rhob.clear()
-		self.layer3vp.clear()
-		self.layer3rhob.clear()
-		self.freqbox.setText('25')
-		self.lenbox.setText('0.100')
-		self.sampbox.setText('0.001')
-		self.resultsBox.setText("don't panic!")
-		self.calculateButton.setEnabled(False)
-		self.exportButton.setEnabled(False)
-		self.validatorList = []
-		self.freqbox.textChanged.emit(self.freqbox.text())
-		self.lenbox.textChanged.emit(self.lenbox.text())
-		self.sampbox.textChanged.emit(self.sampbox.text())
-		#clear out the FigureCanvases
+		#clear out the FigureCanvases if there is no existing plots
+		if self.calculateState == 0:
+			self._update_ricker_ax.clear()
+			self._update_ricker_ax.tick_params(labelleft=False, labelbottom=False)
+			self._update_ricker_ax.figure.canvas.draw()
+			self._update_earthmodel_ax.clear()
+			self._update_earthmodel_ax.tick_params(labelleft=False)
+			self._update_wedge_ax.clear()
+			self._update_wedge_ax.tick_params(labelleft=False, labelbottom=False)
+			self._update_earthmodel_ax.figure.canvas.draw()
+			self._update_wedge_ax.figure.canvas.draw()
+			self._update_amp_ax.clear()
+			self._update_amp_ax.tick_params(labelleft=False, labelbottom=False)
+			self._update_amp_ax2.clear()
+			self._update_amp_ax2.tick_params(labelright=False, labelbottom=False)
+			self._update_amp_ax.figure.canvas.draw()
+			self._update_amp_ax2.figure.canvas.draw()
+		#clear out the FigureCanvases if there are existing plots
 		if self.calculateState == 1:
 			del self._update_ricker_ax.lines[:]
 			self._update_ricker_ax.tick_params(labelleft=False, labelbottom=False)
