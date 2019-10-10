@@ -11,7 +11,7 @@ This project was built using Python 3.6.8 and PyQT5.  There are two environment 
 
 1) environment.yml
 
-2)requirements.txt
+2) requirements.txt
 
 To set up your environment, at the terminal enter either:
 
