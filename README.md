@@ -10,6 +10,7 @@ This project is inspired by one of Agile Scientific's "X lines of code" Jupyter 
 This project was built using Python 3.6.8 and PyQT5.  There are two environment files provided to set up a conda environment for running the program:
 
 1) environment.yml
+
 2)requirements.txt
 
 To set up your environment, at the terminal enter either:
@@ -19,8 +20,10 @@ $ conda env create -f environment.yml
 ```
 or
 ```bash
-$ conda create -n <env> -f requirements.txt
+$ conda create -n env_name -f requirements.txt
 ```
+Where env_name is whatever name you want to give the environment.
+
 You can activate the new environment by entering the following at the terminal:
 
 ```bash
