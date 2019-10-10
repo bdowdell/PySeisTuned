@@ -502,4 +502,5 @@ if __name__ == '__main__':
 	app = QApplication(sys.argv)
 	app.setWindowIcon(QIcon('wedge.png'))
 	ex = PySeisTuned()
+	ex.move(380,170)
 	sys.exit(app.exec_())
