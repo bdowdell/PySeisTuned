@@ -327,7 +327,7 @@ class tabbedWindow(QWidget):
 
 			self.exportButton.setEnabled(True)
 
-		self.calculateButton.clicked.connect(lambda: calculateValues())
+		self.calculateButton.clicked.connect(calculateValues)
 
 		self.exportButton.clicked.connect(self.export_figures)
 
