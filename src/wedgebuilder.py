@@ -57,6 +57,9 @@ def wavelet(duration=0.100, dt=0.001, f=25):
 
 
 def get_wavelet_plot_parms(w):
+    """Assumes w is numpy array
+    Returns a numpy array
+    """
     start = int(len(w) / 2 * -1 - 1)
     stop = int(len(w) / 2)
     num = len(w)
@@ -77,13 +80,16 @@ def tuningwedge(rc, w):
 
 
 def mask_rc(rc):
+    """Assumes rc is a numpy array
+    Returns a masked numpy array for zero values
+    """
     return np.ma.masked_equal(rc, 0)
 
 
 def tuningcurve(rc, synth, rock_props):
     """
 	This function calculates the tuning curve
-	Returns: z, z_m, z_ft, z_tuning, z_tuning_m, z_tuning_ft, amp
+	Returns: z, z_tuning, amp, z_apparent, z_onset
 	"""
 
     depth = 240
@@ -138,12 +144,20 @@ def tuningcurve(rc, synth, rock_props):
 
 
 def tuningVLine(amp):
+    """
+    Assumes amp a numpy array
+    Returns min and max values
+    """
     ampMin = np.nanmin(amp)
     ampMax = np.nanmax(amp)
     return ampMin, ampMax
 
 
 def results_summary(inArr):
+    """
+    Assumes inArr a list
+    Returns a string
+    """
     rock_props = inArr[0]
     f_central = inArr[1]
     z_tuning_meas_TWT = inArr[2] / 1000
