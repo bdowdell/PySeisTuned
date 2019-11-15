@@ -15,7 +15,6 @@ from PyQt5.QtWidgets import (
     QPushButton,
     QAction,
     QTabWidget,
-    QVBoxLayout,
     QGridLayout,
     QLineEdit,
     QTextBrowser,
