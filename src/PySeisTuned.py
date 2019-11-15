@@ -131,7 +131,13 @@ class PySeisTuned(QMainWindow):
 	"""
 
     def aboutMenuPopUp(self):
-        Message = """<b>PySeisTuned v1.0\n</b>This program uses Python 3.6 & PyQt5 for interactive Seismic Tuning Wedge modeling.  The calculations are executed in a python module called wedgebuilder.  The wedge model design is inspired by Agile Scientific's X-lines of code notebooks."""
+        Message = "<b>PySeisTuned v1.0\n</b> \
+            This program uses Python 3.6 & PyQt5 \
+                for interactive Seismic Tuning Wedge modeling.  \
+                    The calculations are executed in a python \
+                        module called wedgebuilder.  \
+                            The wedge model design is inspired by \
+                                Agile Scientific's X-lines of code notebooks."
         QMessageBox.about(self, "About", Message)
 
 
