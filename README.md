@@ -5,6 +5,8 @@ Seismic Tuning Wedge calculator using PyQT
 
 This project is inspired by one of Agile Scientific's "X lines of code" Jupyter notebooks, found [here](https://github.com/agile-geoscience/xlines/blob/master/notebooks/00_Synthetic_wedge_model.ipynb "00_Synthetic_wedge_model.ipynb")
 
+![Wedge Calculator GUI](img/pst_wedge_calculator.png "Wedge Calculator GUI")
+
 ## Getting Started
 ### 1) Set up an environment with the required dependencies
 This project was built using Python 3.6.8 and PyQT5.  There are two environment files provided to set up a conda environment for running the program:
